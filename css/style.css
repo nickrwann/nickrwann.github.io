@@ -1,0 +1,413 @@
+@font-face {
+    src: url(fonts/BebasNeue-Light.otf);
+    font-family: BebLight;
+}
+
+/* ------------------------------------------------------------------ */
+/* --------------------------- BASIC SETUP -------------------------- */
+/* ------------------------------------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: black;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 200;
+/*    font-weight: bold;*/
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: #67253F;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+}
+
+h2{
+    font-size: 28px;
+}
+h3{
+    font-size: 20px;
+}
+
+header{
+    height: 10vh;
+}
+    .topnav {
+        display: block;
+        background-color: rgba(0,0,0,.1);
+        overflow: hidden;
+        text-align: center;
+        padding: 50px;
+    }
+        .topnav a {
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .topnav a:hover {
+            border-bottom: 2px solid grey;
+        }
+        .active {
+            border-bottom: 2px solid #67253F;
+        }
+
+footer {
+    color: grey;
+    text-align: center;
+    margin: auto;
+}
+    footer .box {
+        text-align: center;
+        width: 20%;
+        padding: 25px 0px;
+        font-size: 75%;
+        float: left;
+        font-style: italic;
+    }
+    footer p {
+        display: inline-block;
+    }
+    footer ion-icon{
+        display: inline-block;
+        padding-right: 5px;
+    }
+    footer a {
+        display: inline-block;
+    }
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------ New ------------------------------- */
+/* ------------------------------------------------------------------ */
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    height: 100%;
+    display:block;
+}
+
+.TextBox {
+    font-family: 'Alata', 'Lato', 'Arial', sans-serif;
+    line-height: 175%;
+    padding: 0% 25%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: justify;
+}
+.TextBoxTitle {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* ------------------------------------------------------------------ */
+/* -------------------------- Backgrounds --------------------------- */
+/* ------------------------------------------------------------------ */
+
+.HomeBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/Home/LargerPortrait4.jpg");
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.AboutMeBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/AboutMe/TheBean.jpeg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ServiceBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/Service/Ring.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.ProfessionalBackground {
+/*    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/Professional/Port2.jpg");*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("img/Professional/Port2.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.PortfolioBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/Portfolio/Port1.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------ HOME ------------------------------ */
+/* ------------------------------------------------------------------ */
+
+.HomeBackgroundTitle {
+    text-align: left;
+    color: white;
+    height: 90vh;
+    width: 100vw;
+}
+    .HomeBackgroundTitle .box {
+        float: right;
+        width: 50%
+    }
+    .HomeBackgroundTitle h1 {
+        padding-top: 25%;
+        margin-right: 51%;
+    }
+    .HomeBackgroundTitle p.HomeBackgroundTitleText{
+        margin-right: 51%;
+        opacity: 75%;
+        font-style: italic;
+    }
+    .HomeBackgroundTitle .icon-div {
+        float: left;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    .HomeBackgroundTitle .icon-div ion-icon {
+        font-size: 210%;
+        left: 50%;
+        color: #67253F;
+    }
+
+/* ------------------------------------------------------------------ */
+/* ------------------------ Page Title Setup ------------------------ */
+/* ------------------------------------------------------------------ */
+
+.PageTitle{
+    font-family: 'BebLight', 'Lato', 'Arial', sans-serif;
+/*    font-family: 'Montserrat', 'Lato', 'Arial', sans-serif;*/
+    font-weight: bold;
+    text-align: center;
+    height: 90vh;
+    width: 100vw;
+}
+    .PageTitle p {
+        display: inline-block;
+        padding-top: 12.5%;
+        color: white;
+/*        font-size: 120px;*/
+/*        font-size: 130px;*/
+        font-size: 140px;
+        border-bottom: 5px solid white;
+    }
+
+/* ------------------------------------------------------------------ */
+/* ---------------------------- About Me ---------------------------- */
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------- */
+/* ---------- Picture Collage ---------- */
+/* ------------------------------------- */
+
+.section-pictures {
+    padding: 0;
+}
+
+.pictures-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.pictures-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.picture-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.picture-photo img {
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.picture-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* ------------------------------------------------------------------ */
+/* ----------------------------- Service ---------------------------- */
+/* ------------------------------------------------------------------ */
+
+.ServiceText{
+}
+    .ServiceText .quote{
+        font-family: 'Alata', 'Lato', 'Arial', sans-serif;
+        line-height: 175%;
+        color: grey;
+        border-bottom: 3px solid grey;
+        margin: 0% 30%;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+    .quote .q1{
+        padding-bottom: 10px;
+        text-align: justify;
+    }
+    .quote .q2{
+        text-align: right;
+    }
+    .ServiceText a{
+        color: white;
+    }
+    .HeaderPic{
+        height: 160px;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        margin: 0% 12.5%;
+        padding-top: 50px;
+    }
+
+    .BAM .HeaderPic{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/Service/BAM.jpeg");
+    }
+    .Impact .HeaderPic{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/Service/Impact.jpeg");
+    }
+    .PhysicsFestival .HeaderPic{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/Service/Physics.jpg");
+    }
+    .SITC .HeaderPic{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/Service/SITC.jpeg");
+    }
+/*
+    .ServiceText h2{
+        font-family: 'Montserrat', 'Lato', 'Arial', sans-serif;
+        font-family: 'BebLight', 'Lato', 'Arial', sans-serif;
+        font-weight: bold;
+        font-size: 70px;
+        color: white;
+    }
+*/
+    .BAM h3 {
+        color: white;
+/*
+        font-family: 'BebLight', 'Lato', 'Arial', sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+*/
+    }
+
+/* ------------------------------------------------------------------ */
+/* ------------------------ Professional ---------------------------- */
+/* ------------------------------------------------------------------ */
+
+.ProfessionalSection{
+    text-align: center
+}
+    .ProfessionalSection .TextBoxTitle{
+        padding-top: 100px;
+/*        padding-bottom: 0px;*/
+    }
+    .ProfessionalSection .TextBoxTitle h2{
+        display: inline-block;
+        color: #67253F;
+        border-bottom: 3px solid #67253F;
+    }
+    
+    .ProfessionalSection .TextBox{
+        padding-top: 25px;
+        padding-bottom: 0px;
+    }
+    .ProfessionalSection ion-icon{
+        padding: 25px 0px;
+        padding-bottom: 100px;
+        font-size: 175%;
+    }
+
+
+/* ------------------------------------------------------------------ */
+/* ---------------------------- Portfolio --------------------------- */
+/* ------------------------------------------------------------------ */
+
+.Project{
+    text-align: center;
+    
+}
+    .ProjectImg{
+        margin: 0% 25%;
+        padding-top: 150px;
+
+    }
+        .ProjectImg img{
+            border: 3px solid grey;
+            border-radius: 50px;
+            width: 100%;
+            height: auto;
+        }
+    .ProjectImg video{
+            border: 3px solid grey;
+            border-radius: 50px;
+            width: 100%;
+            height: auto;
+        }
+    .ProjectDescription{
+    }
+        .ProjectDescription .TextBoxTitle{
+/*            padding-top: 50px;*/
+        }
+            .ProjectDescription h2{
+                display: inline-block;
+/*                Maroon*/
+/*
+                color: #67253F;
+                border-bottom: 2px solid #67253F;
+*/
+/*                Green*/
+                color: #00CAA4;
+                border-bottom: 2px solid #00CAA4;
+/*                Blue*/
+                color: #0379C1;
+                border-bottom: 2px solid #0379C1;
+            }
+        .ProjectDescription .TextBox{
+            padding-top: 15px;
+        }
+    .ProjectDescription .GithubTitle{
+    }
+    .ProjectDescription .GithubHeader{
+        border-bottom: none;
+    }
+    .GithubButton{
+        padding-top: 25px;
+        padding-bottom: 150px;
+    }
+        .GithubButton img{
+            height: 100px;
+            border-radius: 100px;
+            border: 5px solid #67253F;
+            border: 3px solid grey;
+/*            border: 10px solid #009E85;*/
+        }
