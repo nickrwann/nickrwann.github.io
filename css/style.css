@@ -321,14 +321,13 @@ header{
 }
     .ServiceText .quote-container{
         font-family: 'Alata', 'Lato', 'Arial', sans-serif;
-/*        color: grey;*/
         color: black;
-        position: relative;
         height: 65vh;
+        width: 100%;
         font-size: 150%;
-/*        background-color: blue;*/
+        position: relative;
     }
-    .quote{
+    .quote-container .quote{
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         padding: 75px;
