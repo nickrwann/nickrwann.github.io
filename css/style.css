@@ -13,13 +13,11 @@
     box-sizing: border-box;
 }
 
-html {
-    color: black;
+html, body {
     font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 200;
-/*    font-weight: bold;*/
+/*    font-weight: 200;*/
     font-size: 20px;
-    text-rendering: optimizeLegibility;
+/*    text-rendering: optimizeLegibility;*/
 }
 
 a {
@@ -28,73 +26,164 @@ a {
 
 h1{
     color: white;
-    font-size: 50px;
+/*    font-size: 50px;*/
+    font-size: 250%;
 }
 
 h2{
     font-size: 28px;
+/*    font-size: 140%;*/
 }
 h3{
     font-size: 20px;
+/*    font-size: 100%;*/
+}
+/* ----------------------------------------------------------------------- */
+/* --------------------------- GENERIC SECTIONS -------------------------- */
+/* ----------------------------------------------------------------------- */
+
+/* --------------------------- CONTAINERS -------------------------- */
+.home-container{
+    min-width: 45rem;
+}
+.about-me-container{
+    min-width: 45rem;
+}
+.service-container{
+    min-width: 45rem;
+}
+.professional-container{
+    min-width: 45rem;
+}
+.portfolio-container{
+    min-width: 45rem;
 }
 
+/* --------------------------- HEADER -------------------------- */
 header{
+    /* Sizing */
     height: 10vh;
+    /* Background Color */
+    background-color: rgba(0,0,0,.1);
+    /* Positioning */
+    position: relative;
 }
-    .topnav {
-        display: block;
-        background-color: rgba(0,0,0,.1);
-        overflow: hidden;
-        text-align: center;
-        padding: 50px;
+    header .topnav {
+        /* Sizing */
+        width: 40rem;
+        list-style-type: none;
+        /* Positioning */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-        .topnav a {
-            color: #ffffff;
+        .topnav li {
+            /* Positioning */
+            float: left;
+            /* Sizing */
+            width: 20%;
+            /* Chil Position */
             text-align: center;
-            padding: 10px 16px;
+        }
+        .topnav a {
+            /* Positioning */
+            display: inline-block;
+            /* Sizing */
+            padding: 0px 15%;
+            /*  Coloring */
+            color: white;
             text-decoration: none;
-            border-radius: 4px;
         }
         .topnav a:hover {
+            border-radius: 4px;
             border-bottom: 2px solid grey;
         }
         .active {
+            border-radius: 4px;
             border-bottom: 2px solid #67253F;
         }
 
-footer {
-    color: grey;
-    text-align: center;
-    margin: auto;
+/* --------------------------- PAGE TITLE -------------------------- */
+.home-page-title-container{
+    color: white;
+    height: 90vh;
 }
-    footer .box {
+.page-title-container{
+    color: white;
+    height: 90vh;
+    font-family: 'BebLight', 'Lato', 'Arial', sans-serif;
+    font-weight: bold;
+}
+    .page-title{
         text-align: center;
-        width: 20%;
-        padding: 25px 0px;
-        font-size: 75%;
-        float: left;
-        font-style: italic;
+        padding-top: 12.5%;
     }
-    footer p {
+    .page-title p {
         display: inline-block;
+        font-size: 140px;
+        border-bottom: 5px solid white;
     }
-    footer ion-icon{
-        display: inline-block;
-        padding-right: 5px;
+
+/* --------------------------- TEXT BOX -------------------------- */
+.text-box {
+    font-family: 'Alata', 'Lato', 'Arial', sans-serif;
+    line-height: 175%;
+    padding: 0% 25%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: justify;
+}
+
+/* --------------------------- FOOTER -------------------------- */
+    footer {
+        /* Positioning */
+        position: relative;
+        height: 7.5vh;
+        color: grey;
+        text-align: center;
     }
-    footer a {
-        display: inline-block;
-    }
+        .footer-nav {
+            /* Sizing */
+            width: 30rem;
+            /* Positioning */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+            .footer-nav .footer-box {
+                /* Positioning */
+                float: left;
+                /* Sizing */
+                width: 33.3333333333333333%;
+                font-size: 75%;
+            }
+            .footer-box p {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .footer-box ion-icon{
+                display: inline-block;
+                vertical-align: middle;
+                padding-right: 5px;
+            }
+            .footer-box a {
+                display: inline-block;
+                vertical-align: middle;
+            }
 
 /* ------------------------------------------------------------------ */
 /* ------------------------------ New ------------------------------- */
 /* ------------------------------------------------------------------ */
+/*
 
 .box {
     float: left;
     width: 33.33%;
     padding: 50px;
 }
+*/
 .clearfix::after {
     content: "";
     clear: both;
@@ -103,7 +192,7 @@ footer {
     display:block;
 }
 
-.TextBox {
+.text-box {
     font-family: 'Alata', 'Lato', 'Arial', sans-serif;
     line-height: 175%;
     padding: 0% 25%;
@@ -120,97 +209,65 @@ footer {
 /* -------------------------- Backgrounds --------------------------- */
 /* ------------------------------------------------------------------ */
 
-.HomeBackground {
+.picture-background{
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+/*    width: 100vw;*/
+}
+
+.home-container .picture-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/Home/LargerPortrait4.jpg");
     background-position: top;
-    background-size: cover;
-    overflow: hidden;
 }
 
-.AboutMeBackground {
+.about-me-container .picture-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/AboutMe/TheBean.jpeg");
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
 }
 
-.ServiceBackground {
+.service-container .picture-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/Service/Ring.jpg");
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
 }
 
-.ProfessionalBackground {
-/*    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/Professional/Port2.jpg");*/
+.professional-container .picture-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("img/Professional/Port2.jpg");
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
 }
 
-.PortfolioBackground {
+.portfolio-container .picture-background {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/Portfolio/Port1.jpg");
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
 }
 
 /* ------------------------------------------------------------------ */
 /* ------------------------------ HOME ------------------------------ */
 /* ------------------------------------------------------------------ */
 
-.HomeBackgroundTitle {
-    text-align: left;
-    color: white;
-    height: 90vh;
-    width: 100vw;
+.home-title {
+    float: right;
+    width: 50%;
 }
-    .HomeBackgroundTitle .box {
-        float: right;
-        width: 50%
-    }
-    .HomeBackgroundTitle h1 {
+    .home-title h1 {
+        width: 15rem;
         padding-top: 25%;
         margin-right: 51%;
     }
-    .HomeBackgroundTitle p.HomeBackgroundTitleText{
+    .home-title p{
+        width: 15rem;
         margin-right: 51%;
         opacity: 75%;
         font-style: italic;
     }
-    .HomeBackgroundTitle .icon-div {
+    .home-title .icon-div {
+        padding-top: .5rem;
+        width: 15rem;
         float: left;
-        padding-right: 20px;
-        padding-top: 10px;
     }
-    .HomeBackgroundTitle .icon-div ion-icon {
-        font-size: 210%;
-        left: 50%;
-        color: #67253F;
-    }
-
-/* ------------------------------------------------------------------ */
-/* ------------------------ Page Title Setup ------------------------ */
-/* ------------------------------------------------------------------ */
-
-.PageTitle{
-    font-family: 'BebLight', 'Lato', 'Arial', sans-serif;
-/*    font-family: 'Montserrat', 'Lato', 'Arial', sans-serif;*/
-    font-weight: bold;
-    text-align: center;
-    height: 90vh;
-    width: 100vw;
-}
-    .PageTitle p {
-        display: inline-block;
-        padding-top: 12.5%;
-        color: white;
-/*        font-size: 120px;*/
-/*        font-size: 130px;*/
-        font-size: 140px;
-        border-bottom: 5px solid white;
-    }
+        .home-title .icon-div ion-icon {
+            padding-right: 10%;
+            font-size: 210%;
+            left: 50%;
+            color: #67253F;
+        }
 
 /* ------------------------------------------------------------------ */
 /* ---------------------------- About Me ---------------------------- */
@@ -260,32 +317,47 @@ footer {
 /* ------------------------------------------------------------------ */
 
 .ServiceText{
+    line-height: 175%;
 }
-    .ServiceText .quote{
+    .ServiceText .quote-container{
         font-family: 'Alata', 'Lato', 'Arial', sans-serif;
-        line-height: 175%;
-        color: grey;
-        border-bottom: 3px solid grey;
-        margin: 0% 30%;
-        margin-top: 150px;
-        margin-bottom: 150px;
+/*        color: grey;*/
+        color: black;
+        position: relative;
+        height: 65vh;
+        font-size: 150%;
+/*        background-color: blue;*/
     }
-    .quote .q1{
-        padding-bottom: 10px;
-        text-align: justify;
+    .quote{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 75px;
+        width: 30rem;
+        
+        /* Positioning */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    .quote .q2{
-        text-align: right;
-    }
+        .quote .q1{
+            padding-bottom: 1rem;
+            text-align: justify;
+        }
+        .quote .q2{
+            color: black;
+            font-style: italic;
+            text-align: right;
+        }
     .ServiceText a{
         color: white;
     }
     .HeaderPic{
+        border-radius: 15px;
         height: 160px;
         text-align: center;
         background-position: center;
         background-size: cover;
-        overflow: hidden;
         margin: 0% 12.5%;
         padding-top: 50px;
     }
@@ -302,22 +374,8 @@ footer {
     .SITC .HeaderPic{
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/Service/SITC.jpeg");
     }
-/*
-    .ServiceText h2{
-        font-family: 'Montserrat', 'Lato', 'Arial', sans-serif;
-        font-family: 'BebLight', 'Lato', 'Arial', sans-serif;
-        font-weight: bold;
-        font-size: 70px;
-        color: white;
-    }
-*/
     .BAM h3 {
         color: white;
-/*
-        font-family: 'BebLight', 'Lato', 'Arial', sans-serif;
-        font-weight: bold;
-        font-size: 35px;
-*/
     }
 
 /* ------------------------------------------------------------------ */
