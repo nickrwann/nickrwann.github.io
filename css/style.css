@@ -322,22 +322,17 @@ header{
     .ServiceText .quote-container{
         font-family: 'Alata', 'Lato', 'Arial', sans-serif;
         color: black;
-        height: 65vh;
         width: 100%;
         font-size: 150%;
-        position: relative;
+        text-align: center;
     }
     .quote-container .quote{
+        margin: 20vh 0vh;
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         padding: 75px;
         width: 30rem;
-        
-        /* Positioning */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        display: inline-block;
     }
         .quote .q1{
             padding-bottom: 1rem;
