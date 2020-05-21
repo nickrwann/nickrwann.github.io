@@ -24,83 +24,117 @@
                     </div>
                 </section>
             </section>
-
-            <section class="Project">
-                <div class="ProjectImg">
-                    <img src="css/img/Portfolio/SCP.png">
-                </div>
-                <div class="ProjectDescription">
-                    <div class="TextBoxTitle">
-                        <h2>Single Cycle Processor</h2>
-                    </div>
-                    <div class="TextBox">
-                        <p>I designed a fully functional single-cycle processor using ARMv8. To do this, I developed all the intermediate parts of the processor such as the ALU, sign extender, register file, and memory components.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="Project">
-                <div class="ProjectImg">
-                    <img src="css/img/Portfolio/AI.jpg">
-                </div>
-                <div class="ProjectDescription">
-                    <div class="TextBoxTitle">
-                        <h2>Cryptarithmetic Solver</h2>
-                    </div>
-                    <div class="TextBox">
-                        <p>A cryptarithmetic puzzle is a mathematical exercise where letters represent a unique digit that is part of a greater number. The goal is to figure out the digit which the letter represents. With this concept in mind, I wrote a python script which uses logical constraints to solve these puzzles. One simple example is the following: if the letter being solved for begins a word, it cannot be 0 because no number starts with 0. This script was created to practice the idea of logical constraints and how they can be applied to artificial intelligence.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="Project">
-                <div class="ProjectImg">
-                    <video width="100%" height="auto" controls>
-                        <source src="css/img/Portfolio/traffic.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="ProjectDescription">
-                    <div class="TextBoxTitle">
-                        <h2>Traffic Light Controller</h2>
-                    </div>
-                    <div class="TextBox">
-                        <p> I created a small scale traffic light system using a Raspberry Pi, Python, a button, and a breadboard. The lights would begin with one green intersection and one red. Whenever the button was pressed, the green would flash for 4 seconds and then the lights would switch colors. The new lights would stay for 10 seconds, and then switch back.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="Project">
-                <div class="ProjectImg">
-                    <img src="css/img/Portfolio/html2.png" style="border-radius: 50px">
-                </div>
-                <div class="ProjectDescription">
-                    <div class="TextBoxTitle">
-                        <h2>Omnifood Website</h2>
-                    </div>
-                    <div class="TextBox">
-                        <p>During the summer of my junior year in college, I decided that I would learn HTML & CSS. To accomplish this I took a Udemy course which walked me through the design and creation aspects of web development by creating the 
-
-                        <a href=http://webpage.pace.edu/kp31080n/omnifood/ target="_blank" style="color: #0379C1">Omnifood</a>
-
-                        website.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="Project">
-                <div class="ProjectDescription">
-                    <div class="GithubTitl">
-                        <div class="TextBoxTitle">
-                            <div class="GithubTitle">
-    <!--                            <h2 class="GithubHeader">And more on my Github!</h2>-->
-                                <h2 class="GithubHeader">More projects:</h2>
+            <section class="portfolio-content">
+<!------------------------------------------------------>
+<!------------------------ MITS ------------------------>
+<!------------------------------------------------------>
+                <div class="project-container">
+                    <div class="mits">
+                        <div class="paragraph-block">
+                            <div class="media-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/J3ghWZDBjV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="header-container">
+                                <div class="header">
+                                    <h2>MITS</h2>
+                                    <h3>(Multi-Instrumental Tactile Synthesizer)</h3>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Multi-Instrumental-Tactile-Synthesizers, or MITS are a dynamically programmable pair of gloves which can play and record multiple instruments and vocals to create music. These work with a DAW (Digital Audio Workstation) like GarageBand, Pro Tools or Reaper. This allows the user to play a multitude of different instruments that are already present in the DAW. The gloves connect to a computer where the audio is generated. They are battery powered also, allowing the user to walk around while creating music.</p>
                             </div>
                         </div>
                     </div>
-                <div class="GithubButton">
-                    <a href="https://github.com/nickrwann" target="_blank">
-                        <img src="css/img/Portfolio/Github.png">
-                    </a>
                 </div>
+<!---------------------------------------------------------------->
+<!------------------------ RECEIPT READER ------------------------>
+<!---------------------------------------------------------------->
+                <div class="project-container">
+                    <div class="receipt-reader">
+                        <div class="paragraph-block">
+                            <div class="media-container">
+                                <iframe src="https://www.youtube.com/embed/4TQ8t010ACY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="header-container">
+                                <div class="header">
+                                    <h2>Receipt Reader</h2>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>Keeping track of purchases can prove difficult. Receipt Reader allows users to input pictures of their receipts and receive a google spreadsheet containing the receipts store location, purchase date, total cost, and the last four digits of the credit card used.<br><br>
+                                To do this, the user will enter the phone number. Using Nexmo, the user's identity is verified and their phone number saved to later connect it to a specific google sheet to reference future receipt additions. Next, the user uploads one or multiple receipt photos which will be OCRed using Google Vision OCR, processed in the backend using javascript, and then placed in a google sheet. The user then enters their email and the spreadsheet’s shareable link which is sent to them via email. If the user is new, the spreadsheet will now be linked to the user’s phone number so that future receipts can be added to the same sheet.<br><br>
+                                This app not only allows users an easy way to compile and store their finance information, but it gives them the opportunity to gain valuable insights from their purchases - where they are spending their money, when, how much, and with what card. As data becomes more important, this receipt reader is not only priceless in itself, but in the long run can save money!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+<!---------------------------------------------------------->
+<!------------------------ OMNIFOOD ------------------------>
+<!---------------------------------------------------------->
+                <div class="project-container">
+                    <div class="omnifood">
+                        <div class="paragraph-block">
+                            <div class="media-container">
+                                <img src="css/img/Portfolio/html2.png">
+                            </div>
+                            <div class="header-container">
+                                <div class="header">
+                                    <h2>Omnifood Website</h2>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>During the summer of my junior year in college, I decided that I would learn HTML & CSS. To accomplish this, I took a Udemy course which walked me through the design and creation aspects of web development by creating the 
 
+                                <a href=http://webpage.pace.edu/kp31080n/omnifood/ target="_blank" style="color: #0379C1">Omnifood</a>
+
+                                website.</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+<!-------------------------------------------------------------------->
+<!---------------------- SINGLE-CYCLE PROCESSOR ---------------------->
+<!-------------------------------------------------------------------->
+                <div class="project-container">
+                    <div class="processor">
+                        <div class="paragraph-block">
+                            <div class="media-container">
+                                <img src="css/img/Portfolio/SCP.png">
+                            </div>
+                            <div class="header-container">
+                                <div class="header">
+                                    <h2>Single Cycle Processor</h2>
+                                </div>
+                            </div>
+                            <div class="text-box">
+                                <p>I designed a fully functional single-cycle processor using ARMv8. To do this, I developed all the intermediate parts of the processor such as the ALU, sign extender, register file, and memory components.</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+<!---------------------------------------------------->
+<!---------------------- GITHUB ---------------------->
+<!---------------------------------------------------->
+            <div class="project-container">
+                    <div class="github">
+                        <div class="paragraph-block">
+                            <div class="header-container">
+                                <div class="header">
+                                    <h2>More Projects</h2>
+                                </div>
+                            </div>
+                            <div class="media-container">
+                                <a href="https://github.com/nickrwann" target="_blank">
+                                    <img src="css/img/Portfolio/Github.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </section>
+<!---------------------------------------------------->
+<!---------------------- FOOTER ---------------------->
+<!---------------------------------------------------->
             <footer>
                 <div class="footer-nav">
                     <div class="footer-box">
@@ -118,6 +152,21 @@
                 </div>
             </footer>
         </section>
+<!--
+            <section class="Project">
+                <div class="ProjectImg">
+                    <img src="css/img/Portfolio/AI.jpg">
+                </div>
+                <div class="ProjectDescription">
+                    <div class="TextBoxTitle">
+                        <h2>Cryptarithmetic Solver</h2>
+                    </div>
+                    <div class="TextBox">
+                        <p>A cryptarithmetic puzzle is a mathematical exercise where letters represent a unique digit that is part of a greater number. The goal is to figure out the digit which the letter represents. With this concept in mind, I wrote a python script which uses logical constraints to solve these puzzles. One simple example is the following: if the letter being solved for begins a word, it cannot be 0 because no number starts with 0. This script was created to practice the idea of logical constraints and how they can be applied to artificial intelligence.</p>
+                    </div>
+                </div>
+            </section>
+-->
     </body>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </html>
