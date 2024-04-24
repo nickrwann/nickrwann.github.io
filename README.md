@@ -6,4 +6,4 @@ Please note that the information presented on this website is outdated and no lo
 I plan to create a new personal website soon to showcase my current activities and accomplishments. 
 Stay tuned for updates on the launch of my new website.
 
-nickrwann.github.io
+[Visit my website](https://nickrwann.github.io)
